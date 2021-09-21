@@ -1,6 +1,6 @@
-# EC601Project1 
+# EC601Project1 -
 
-## Building 3D scenes from 2D images literature review
+# Building 3D scenes from 2D images literature review
 
 ## 1. Introduction
 
