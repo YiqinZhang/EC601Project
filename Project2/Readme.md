@@ -1,6 +1,6 @@
 # Project2 TwitterAPI
 
-### Run our code
+## Run our code
 Firstly, open TravelTweets.py. Replace the consumer_key, consumer_secret, access_token, access_token_secret with your own keys;
 
 ```
@@ -21,8 +21,8 @@ After the folder is successfully created, run ```$ python NLP.py;```
 Finally, you will get a text file named "result.txt" containing a list of 10 cities.
 
 
-### Product Mission
+## Product Mission
 
-This project aims to get the most welcome cities in the US for a short trip by analyzing the tweets. I list cities ranked from the most significant to the least in the overall sentiment of all related text tweet content.
+This project aims to get the most welcome cities in the US for a short trip by analyzing the tweets. I list cities ranked from the most positive to the least in the overall sentiment of all related text tweet content.
 
 
