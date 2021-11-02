@@ -21,8 +21,16 @@ After the folder is successfully created, run ```$ python NLP.py;```
 Finally, you will get a text file named "result.txt" containing a list of 10 cities.
 
 
-## Product Mission
+## Product mission
 
 This project aims to get the most welcome cities in the US for a short trip by analyzing the tweets. I list cities ranked from the most positive to the least in the overall sentiment of all related text tweet content.
 
+## MVP
 
+The project retrieves user tweets and performs sentiment analysis. It provides the top 10 favorite US cities for a short trip using google sentiment analysis on the popular and real-time related Tweets.
+
+## User stories
+
+I, as a user, want to know what are the most welcome cities in the US for a short trip to get the best experience.
+
+I, as a travelling agnecy, want to know the popularity rank of the tourist destinations, so that I can arrange tourism products accordingly.
