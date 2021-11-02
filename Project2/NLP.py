@@ -18,10 +18,10 @@ for i in range(0, filenum):
         content = review_file.read()
 
     document = language_v1.Document(content=content, type_=language_v1.Document.Type.PLAIN_TEXT)
-    # annotations = client.analyze_sentiment(document=document)
-    encoding_type = language_v1.EncodingType.UTF8
-    annotations = client.analyze_sentiment(request = {'document': document, 'encoding_type': encoding_type})
-    # print(annotations)
+    annotations = client.analyze_sentiment(document=document)
+    # encoding_type = language_v1.EncodingType.UTF8
+    # annotations = client.analyze_sentiment(request = {'document': document, 'encoding_type': encoding_type})
+    
     # Print the results
     score = annotations.document_sentiment.score
     magnitude = annotations.document_sentiment.magnitude
