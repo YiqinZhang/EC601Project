@@ -36,3 +36,20 @@ def retrieve():
     ts = TwitterSearch(consumer_key, consumer_secret, access_token, access_token_secret)
 
     return ts
+
+
+# check to see if error handling cities not in the list, throw exception
+def test_error():
+    try:
+        tso = TwitterSearchOrder()
+        tso.set_keywords(["#travel", "#holiday", "#vacation"], or_operator=True)
+        tso.add_keyword("Cambridge")
+        tso.set_language("en")
+        tso.set_count(100)
+        tso.set_result_type("mixed")
+        tso.set_include_entities(False)
+
+        ts = TwitterSearch(consumer_key, consumer_secret, access_token, access_token_secret)
+    except (TwitterSearchException(ts.exceptions[400])) as e:
+        raise TwitterSearchException(ts.exceptions[400].message)
+
