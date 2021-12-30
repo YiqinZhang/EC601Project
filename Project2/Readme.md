@@ -1,4 +1,4 @@
-# Project2 TwitterAPI
+# Project2 Twitter Analyzer
 
 ## Run the code
 Firstly, open TravelTweets.py. Replace the consumer_key, consumer_secret, access_token, access_token_secret with your own keys;
